@@ -8,7 +8,7 @@
 
 - Operates without internet access or a cloud account once the application and configuration are available locally.
 - Controls speed, both valves, 30 device slots and synchronized Funscript/CSV playback.
-- Runs as a Go server, through a Windows launcher, or in a NAS Docker container with automatic restart disabled.
+- Runs as a Go server, through a Windows launcher, or in a Docker container.
 - Includes a virtual device for development without hardware.
 
 The current source version is **0.2.0-rc.3**, an experimental candidate for VacuGlide 2 firmware **1.03 / 1.0.3**. Physical acceptance of this Go implementation and Windows Hotspot remains open. AI Ultra and firmware updates are outside the supported profile.
@@ -28,7 +28,7 @@ A source build needs downloaded dependencies or a prepared cache. The built appl
 
 ## Connect a device or application
 
-Choose [Windows](docs/en/windows.md) or the [standalone server / NAS guide](docs/en/guide.md). Configure the local network, connect the device and confirm pairing in the panel. For an external application, set the local server address and control key, then explicitly enable the required API features.
+Choose [Windows](docs/en/windows.md) or the [standalone server or Docker guide](docs/en/guide.md). Configure the local network, connect the device and confirm pairing in the panel. For an external application, set the local server address and control key, then explicitly enable the required API features.
 
 The standalone server and Windows launcher default to a maximum speed of 15%, with script features disabled. The synthetic lab enables script features and uses a 100% limit for virtual tests. The panel uses a renewable control session; external applications manage their own STOP behavior. Firmware acknowledgement of STOP is not a physical sensor reading.
 

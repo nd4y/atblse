@@ -44,9 +44,9 @@ Applicable profiles: web, cli, library, service, network, integration, data, fir
 ## Remaining acceptance
 
 - Real Go-candidate playback, both valves, slot changes, stop/disconnect and power-loss behavior on the supported device.
-- Native Windows Hotspot provisioning/DHCP/DNS and router/NAS paths, including cold startup without WAN.
+- Native Windows Hotspot provisioning/DHCP/DNS and routing from the device to the Docker host, including cold startup without WAN.
 - Clean installation, target permissions, backup/restore and failure recovery on supported physical platforms.
 - Complete accessibility and representative resource/latency measurements.
 - Stable release artifacts, product-wide license decision and installed artifact provenance.
 
-No real device, router, NAS deployment or firmware operation is part of the offline verification suite. Protocol acknowledgement and virtual playback cannot establish physical motion or stopping.
+No real device, router, deployed container or firmware operation is part of the offline verification suite. Protocol acknowledgement and virtual playback cannot establish physical motion or stopping.
